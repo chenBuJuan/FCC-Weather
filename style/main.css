@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+}
+
+#container{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#in{
+    width: 400px;
+    margin-top: 200px;
+    text-align: center;
+    display: block;
+}
+#textIn, #btnIn{
+    height: 36px;
+    line-height: 36px;
+    font-size: 1em;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+#textIn{
+    width: 300px;
+    border: 1px solid #ccc;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+#btnIn{
+    width: 60px;
+    display: inline-block;
+    background-color: #03c5ff;
+    color: #fff;
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out 0s;
+}
+#btnIn:hover{
+    transform: translate(1.5px, 1.5px);
+}
+
+#out{
+    display: none;
+}
+#out>div{
+    margin-top: 10px;
+}
+#out header{
+    background-color: #03c5ff;
+    color: #fff;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+#out table{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#out table tr{
+    line-height: 25px;
+}
+#out table tr td:first-of-type{
+    width: 300px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+#out table tr td:last-of-type{
+    width: 300px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+#error{
+    width: 400px;
+    margin-top: 200px;
+    text-align: center;
+    display: none;
+}
+#error span{
+    font-size: 16px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <section id="container">
+        <div id="in">
+            <input type="text" id="textIn" placeholder="请输入要查询天气的城市名"/>
+            <span id="btnIn">Go</span>
+        </div>
+        <div id="out">
+            <div id="now">
+                <header>
+                    <span>当前实况天气</span>
+                </header>
+                <table>
+                    <tr>
+                        <td>当前温度：</td>
+                        <td id="nTemp"></td>
+                    </tr>
+                    <tr>
+                        <td>当前风向：</td>
+                        <td id="nWindDir"></td>
+                    </tr>
+                    <tr>
+                        <td>当前风力：</td>
+                        <td id="nWindStr"></td>
+                    </tr>
+                    <tr>
+                        <td>当前湿度：</td>
+                        <td id="nHumidity"></td>
+                    </tr>
+                    <tr>
+                        <td>更新时间：</td>
+                        <td id="nTime"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="today">
+                <header>
+                    <span>今日天气</span>
+                </header>
+                <table>
+                    <tr>
+                        <td>城市：</td>
+                        <td id="tCity"></td>
+                    </tr>
+                    <tr>
+                        <td>日期：</td>
+                        <td id="tDate"></td>
+                    </tr>
+                    <tr>
+                        <td>星期：</td>
+                        <td id="tWeek"></td>
+                    </tr>
+                    <tr>
+                        <td>温度：</td>
+                        <td id="tTemp"></td>
+                    </tr>
+                    <tr>
+                        <td>天气：</td>
+                        <td id="tWeather"></td>
+                    </tr>
+                    <tr>
+                        <td>风况：</td>
+                        <td id="tWind"></td>
+                    </tr>
+                    <tr>
+                        <td>穿衣指数：</td>
+                        <td id="tDressing_index"></td>
+                    </tr>
+                    <tr>
+                        <td>穿衣建议：</td>
+                        <td id="tDressing_advice"></td>
+                    </tr>
+                    <tr>
+                        <td>紫外线强度：</td>
+                        <td id="tUv_index"></td>
+                    </tr>
+                    <tr>
+                        <td>洗车指数：</td>
+                        <td id="tWash_index"></td>
+                    </tr>
+                    <tr>
+                        <td>旅游指数：</td>
+                        <td id="tTravel_index"></td>
+                    </tr>
+                    <tr>
+                        <td>晨练指数：</td>
+                        <td id="tExercise_index"></td>
+                    </tr>
+                    <tr>
+                        <td>干燥指数：</td>
+                        <td id="tDrying_index"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="future">
+                <header>
+                    <span>未来几天天气</span>
+                </header>
+            </div>
+        </div>
+        <div id="error">
+            <span>输入有误！</span>
+        </div>
+    </section>
+</body>
+
+<script src="action/jquery.min.js"></script>
+<script src="action/main.js"></script>
+</html>
